@@ -1,0 +1,15 @@
+Package: RcompileSlides
+Type: Package
+Title: Compiles Rmd slides to HTML and PDF
+Version: 0.1
+Date: 2019-12-01
+Author: Richard D. Morey
+Maintainer: Richard D. Morey <richarddmorey@gmail.com>
+Description: Compiles Rmd slides to HTML and PDF (with addin)
+License: MIT
+RoxygenNote: 6.1.1
+Imports: 
+    rmarkdown,
+    tools,
+    pagedown,
+    rstudioapi

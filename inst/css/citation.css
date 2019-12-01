@@ -1,0 +1,8 @@
+.citation {
+  font-size: 9pt; 
+  position: absolute; 
+  bottom: 10%; 
+  left: 10%; 
+  width: 70%;
+  text-align: left;
+}
