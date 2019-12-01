@@ -1,4 +1,4 @@
 Name: Compile slides
 Description: Compiles Rmd slides to HTML and PDF
 Binding: render_html_and_pdf
-Interactive: false
+Interactive: true
