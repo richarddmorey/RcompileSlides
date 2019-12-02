@@ -4,7 +4,10 @@
 \alias{render_html_and_pdf}
 \title{Render an Rmarkdown presentation to HTML and PDF}
 \usage{
-render_html_and_pdf()
+render_html_and_pdf(notes_slides = pkg_options()$notes_slides)
+}
+\arguments{
+\item{notes_slides}{Create a PDF with space for notes?}
 }
 \value{
 Returns a list with the output file paths

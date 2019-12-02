@@ -12,4 +12,5 @@ Imports:
     rmarkdown,
     tools,
     pagedown,
-    rstudioapi
+    rstudioapi,
+    settings

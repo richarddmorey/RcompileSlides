@@ -6,7 +6,7 @@ Also contains a collection of additional css files that I've created to make pre
 
 To install, run:
 ```
-devtools::install_github(repo = "richarddmorey/RcompileSlides")
+devtools::install_github(repo = "richarddmorey/RcompileSlides", dependencies = TRUE)
 ```
 You may need to install the `devtools` R package first.
 

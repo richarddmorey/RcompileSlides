@@ -1,0 +1,35 @@
+.footnotes {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  width: 80%;
+  font-size: 0.6em;
+}
+
+slides > slide {
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  background: linear-gradient(#ffffff, #ffffff 85%, #e6e6e6);
+  background-color: white;
+}
+
+.forceBreak {
+  -webkit-column-break-after: always;
+  break-after: column;
+}
+
+/* Uncomment this to turn off page numbers */
+/*
+slides > slide:not(.nobackground):after {
+  content: '';
+}
+*/
+
+.bottomnote {
+  font-size: 9pt; 
+  position: absolute; 
+  bottom: 10%; 
+  left: 10%; 
+  width: 70%;
+  text-align: left;
+}
