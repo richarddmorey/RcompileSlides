@@ -7,22 +7,15 @@ output:
   ioslides_presentation:
     dev: svg
     widescreen: true
-    css: [ "assets/css/custom_pres.css" ]
+    css: assets/css/custom_pres.css
+    includes:
+      in_header: assets/html/header.html
 logo: assets/img/cardiff_logo_sq.png
 editor_options: 
   chunk_output_type: console
 bibliography: assets/bib/citations.bib
 csl: assets/bib/apa.csl
 ---
-
-<!-- Code below loads jquery -->
-<script src="assets/js/jquery.min.js"></script>
-
-<!-- Code below does slide numbering -->
-<script src="assets/js/slide_numbering.js"></script>
-
-<!-- Code below allows footnotes -->
-<script src="assets/js/footnotes.js"></script>
 
 ```{r fonts, eval = Sys.getenv("RDM_COMPUTER")=="1", include=FALSE}
 source('assets/R_utility/fonts.R')
