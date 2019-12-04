@@ -31,8 +31,8 @@ The following options are supported:
  \item{\code{pdfjam_scale}}{(\code{character};"0.8") Size by which to scale the slides }
  \item{\code{pdfjam_nup}}{(\code{character};"1x2") Layout (columns by rows, because landscape)}
  \item{\code{pdfjam_frame}}{(\code{character};"true") Add a frame around the slides?}
- \item{\code{pdfjam_noautoscale}}{(\code{character};"false") }
- \item{\code{pdfjam_suffix}}{(\code{character};"notes") }
+ \item{\code{pdfjam_noautoscale}}{(\code{character};"false") activate/deactivate autoscaling}
+ \item{\code{pdfjam_suffix}}{(\code{character};"notes") Suffix to add to notes pdf file name }
 }
 
 For the pdfjam options, see \url{https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam121/}

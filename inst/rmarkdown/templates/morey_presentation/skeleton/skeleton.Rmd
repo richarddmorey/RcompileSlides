@@ -66,6 +66,20 @@ This is content on the right side
 * You can also do numbered footnotes.<footnote>This is a footnote.</footnote>
 * How about another footnote?<footnote>This is a second footnote.</footnote>
 
+## Sequential figure buildup
+
+```{r echo=FALSE, fig.keep=c(2,4,5)}
+plot(1:10, axes = FALSE, ty = "n", ylab = "", xlab = "x axis")
+axis(1)
+
+RcompileSlides::new_slide("## Sequential figure buildup {.nopagenumberincrement}")
+axis(2)
+mtext("y axis", side = 2, line = par()$mgp[1])
+
+RcompileSlides::new_slide("## Sequential figure buildup {.nopagenumberincrement}")
+points(1:10, 1:10, pch = 19)
+```
+
 ## References {.nopagenumberincrement .smaller}
 
 ### Thank you.

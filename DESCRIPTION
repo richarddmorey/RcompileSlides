@@ -13,4 +13,5 @@ Imports:
     tools,
     pagedown,
     rstudioapi,
-    settings
+    settings,
+    knitr
