@@ -1,5 +1,7 @@
 
 #' Create a new slide in the middle of a knitr chunk
+#' 
+#' Thanks to Yihui Xie for this solution: \url{https://stackoverflow.com/a/59182060/1129889}.
 #'
 #' @param title The title of the new slide
 #'

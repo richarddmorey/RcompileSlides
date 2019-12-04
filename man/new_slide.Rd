@@ -4,7 +4,7 @@
 \alias{new_slide}
 \title{Create a new slide in the middle of a knitr chunk}
 \usage{
-new_slide(title = "\\n\\n## New slide\\n\\n")
+new_slide(title = "## New slide")
 }
 \arguments{
 \item{title}{The title of the new slide}
@@ -15,5 +15,5 @@ will treat it as is (the effect is the same as the chunk
 option `results = 'asis'`) when it is written to the output.
 }
 \description{
-Create a new slide in the middle of a knitr chunk
+Thanks to Yihui Xie for this solution: \url{https://stackoverflow.com/a/59182060/1129889}.
 }
