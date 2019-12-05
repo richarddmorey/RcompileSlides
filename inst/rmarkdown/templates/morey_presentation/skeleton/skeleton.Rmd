@@ -72,11 +72,11 @@ This is content on the right side
 plot(1:10, axes = FALSE, ty = "n", ylab = "", xlab = "x axis")
 axis(1)
 
-RcompileSlides::new_slide("## Sequential figure buildup {.nopagenumberincrement}")
+RcompileSlides::new_slide()
 axis(2)
 mtext("y axis", side = 2, line = par()$mgp[1])
 
-RcompileSlides::new_slide("## Sequential figure buildup {.nopagenumberincrement}")
+RcompileSlides::new_slide()
 points(1:10, 1:10, pch = 19)
 ```
 

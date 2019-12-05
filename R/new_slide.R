@@ -12,7 +12,7 @@
 #' @importFrom knitr asis_output
 #'
 #' @examples
-new_slide = function(title = '## New slide') 
-  knitr::asis_output(paste0("\n\n", title, "\n\n"))
+new_slide = function(title = "&nbsp; {.nopagenumberincrement .previoustitle}")
+  knitr::asis_output(paste0("\n\n## ", title, "\n\n"))
 
   
