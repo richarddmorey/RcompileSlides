@@ -2,9 +2,10 @@
 #' Title
 #'
 #' @param file_path Where to save the bib file
+#' @param URL URL of the bib file 
 #' @param refresh_days How old the existing file can be before it is refreshed
 #' @param copy_to_current Copy the file to the current directory for backup?
-#' @param URL URL of the bib file 
+
 #' @param convert_from NULL to not use iconv; otherwise string giving encoding
 #' @param convert_to string giving encoding; only used if `convert_from` is non-null
 #'
@@ -14,9 +15,9 @@
 #' @importFrom RCurl getURL
 #' @examples
 getbib <- function( file_path = "ref.bib", 
+                    URL = "http://drsmorey.org/bibtex/bibfile.php",
                     refresh_days = 0,
                     copy_to_current = FALSE, 
-                    URL = "http://drsmorey.org/bibtex/bibfile.php",
                     convert_from = NULL,
                     convert_to = NULL )
 {
@@ -33,13 +34,14 @@ getbib <- function( file_path = "ref.bib",
     RCurl::getURL( URL )
   }, silent = TRUE )
   
-  if(inherits( bib_content, "try-error" ) & file.exists( file_path ) ){
+  if(inherits( bib_content, "try-error" ) )
+    if( file.exists( file_path ) ){
       message( "Error retrieving bib file from ", URL, "; returning old file." )
-  }else{
+    }else{
       stop( "Error retrieving bib file from ", URL, "; no old file to use." )
-  }
+    }
   
-  if( !is_null(convert_from) )
+  if( !is.null(convert_from) )
     bib_content = iconv( bib_content,
                          from = convert_from,
                          to = convert_to )

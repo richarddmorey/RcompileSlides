@@ -6,9 +6,9 @@
 \usage{
 getbib(
   file_path = "ref.bib",
+  URL = "http://drsmorey.org/bibtex/bibfile.php",
   refresh_days = 0,
   copy_to_current = FALSE,
-  URL = "http://drsmorey.org/bibtex/bibfile.php",
   convert_from = NULL,
   convert_to = NULL
 )
@@ -16,11 +16,11 @@ getbib(
 \arguments{
 \item{file_path}{Where to save the bib file}
 
+\item{URL}{URL of the bib file}
+
 \item{refresh_days}{How old the existing file can be before it is refreshed}
 
 \item{copy_to_current}{Copy the file to the current directory for backup?}
-
-\item{URL}{URL of the bib file}
 
 \item{convert_from}{NULL to not use iconv; otherwise string giving encoding}
 
