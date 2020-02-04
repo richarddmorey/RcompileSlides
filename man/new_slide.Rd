@@ -4,7 +4,7 @@
 \alias{new_slide}
 \title{Create a new slide in the middle of a knitr chunk}
 \usage{
-new_slide(title = "## New slide")
+new_slide(title = "&nbsp; {.nopagenumberincrement .previoustitle}")
 }
 \arguments{
 \item{title}{The title of the new slide}

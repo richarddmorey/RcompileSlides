@@ -7,11 +7,12 @@ Author: Richard D. Morey
 Maintainer: Richard D. Morey <richarddmorey@gmail.com>
 Description: Compiles Rmd slides to HTML and PDF (with addin)
 License: MIT
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
 Imports: 
     rmarkdown,
     tools,
     pagedown,
     rstudioapi,
     settings,
-    knitr
+    knitr,
+    RCurl
