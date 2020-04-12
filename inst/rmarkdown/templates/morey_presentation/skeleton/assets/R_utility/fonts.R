@@ -38,7 +38,12 @@ if( require(showtext) )
            italic = "Corbel Italic.ttf",
            bolditalic = "Corbel Bold Italic.ttf"
   )
-  
+  font_add("roboto_condensed",
+           regular = "RobotoCondensed-Regular.ttf", 
+           bold = "RobotoCondensed-Bold.ttf",
+           italic = "RobotoCondensed-Italic.ttf",
+           bolditalic = "RobotoCondensed-BoldItalic.ttf"
+  )
   ## Add hooks so that I can choose fonts in the chunk options         
   knitr::knit_hooks$set(
     avenir = function(before, options, envir)
@@ -52,10 +57,12 @@ if( require(showtext) )
     frutiger = function(before, options, envir)
       if (before) par(family = "frutiger"),
     frutiger_light = function(before, options, envir)
-      if (before) par(family = "frutiger_light")
+      if (before) par(family = "frutiger_light"),
+    roboto_condensed = function(before, options, envir)
+      if (before) par(family = "roboto_condensed")
   )
   
-  knitr::opts_chunk$set(frutiger_light = TRUE)
+  knitr::opts_chunk$set(roboto_condensed = TRUE)
   
 }
 
