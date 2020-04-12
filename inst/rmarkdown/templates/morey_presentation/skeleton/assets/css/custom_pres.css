@@ -8,7 +8,7 @@
 }
 
 slides > slide {
-  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  font-family: Roboto, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
   background: linear-gradient(#ffffff, #ffffff 85%, #e6e6e6);
   background-color: white;
 }

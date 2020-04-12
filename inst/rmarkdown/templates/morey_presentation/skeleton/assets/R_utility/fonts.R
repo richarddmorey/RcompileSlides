@@ -4,11 +4,11 @@ if( require(showtext) )
 
   ## set chunk options to use showtext
   knitr::opts_chunk$set(fig.showtext=TRUE, dpi=300)
+
+  sysfonts::font_paths( "/System/Library/Fonts" )
+  sysfonts::font_paths( list.dirs("assets/css", recursive = TRUE) )
   
-  ## Needed for the location of Candara on my system
-  font_paths("/System/Library/Fonts")
-  
-  ## Add two fonts, Avenir and Candara
+  ## Add fonts
   font_add("bigmisterc",
            regular = "bigmisterc.ttf")
   font_add("avenir", 
@@ -44,6 +44,13 @@ if( require(showtext) )
            italic = "RobotoCondensed-Italic.ttf",
            bolditalic = "RobotoCondensed-BoldItalic.ttf"
   )
+  font_add("roboto",
+           regular = "Roboto-Regular.ttf", 
+           bold = "Roboto-Bold.ttf",
+           italic = "Roboto-Italic.ttf",
+           bolditalic = "Roboto-BoldItalic.ttf"
+  )
+  
   ## Add hooks so that I can choose fonts in the chunk options         
   knitr::knit_hooks$set(
     avenir = function(before, options, envir)
