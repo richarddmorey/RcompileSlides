@@ -33,3 +33,7 @@ slides > slide:not(.nobackground):after {
   width: 70%;
   text-align: left;
 }
+
+.smallest {
+  font-size: 14px;
+}
