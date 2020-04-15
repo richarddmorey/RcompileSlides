@@ -17,7 +17,7 @@ bibliography: assets/bib/citations.bib
 csl: assets/bib/apa.csl
 ---
 
-```{r fonts, eval = Sys.getenv("RDM_COMPUTER")=="1", include=FALSE}
+```{r fonts, include=FALSE}
 source('assets/R_utility/fonts.R')
 ```
 
